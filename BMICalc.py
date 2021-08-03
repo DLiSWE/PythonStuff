@@ -114,3 +114,5 @@ kiki = fact.eesh()
 
 print("Your BMI is" + " " + str(BMI.vari(kiya, kiki)))
 print(str(BMI.shtalk(BMI.vari(kiya, kiki))))
+
+print("Test")
