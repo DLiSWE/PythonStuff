@@ -96,6 +96,10 @@ class HtmlDoc(object):
         print('</html>', file=file)
 
 #Main function. Add tags here.
+'''use add_istag for single bracket syntax without closing bracket like <img src>.
+use add_tag for opening and closing bracking
+first parameter is content within first bracket and second parameter is what you want inside the <>...</> syntax
+For styling, include the style within the first parameter'''
 if __name__ == '__main__':
     my_page = HtmlDoc()
     my_page.add_htag('title', 'Page Name')
