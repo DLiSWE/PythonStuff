@@ -1,7 +1,7 @@
 Project 1: How to use the script
 Derek Li
 
-Install an IDE, I use sublime text, it’s free and user friendly..
+Install an IDE(Pycharm/Visual Studio Codes/Jupyter/Sublime)..
 Install Python 3.7
 Install pip
 Install gspread
@@ -9,7 +9,7 @@ Install df2gspread
 Install service account credentials
 Install pandas
 Install numpy
-Install crontab (schedule automation)
+Install python-crontab (schedule automation)
 Install datetime
 
 Open google apps developer and make an developer account
@@ -32,11 +32,10 @@ There are formulas throughout the sheet. They are pretty easy to understand if y
 
 
 
-5. Input days left in month. Uses the formula (daily budget * days left in the month) + already spent, to calculate estimated spend for the month. It is only applied on the summary page. If you want it to apply for each campaign, let me know. I can also change the colors and appearance of the box if that’s a concern. The box pops up immediately after running the script so make sure you fill it in or you will be waiting for nothing. It might be a little hard to find if you have multiple windows open but it’s there.
+5. Input days left in month. Uses the formula (daily budget * days left in the month) + already spent, to calculate estimated spend for the month. It is only applied on the summary page. If you want it to apply for each campaign. The box pops up immediately after running the script so make sure you fill it in or you will be waiting for nothing. It might be a little hard to find if you have multiple windows open but it’s there.
 
 6. The added formulas are sensitive. First sheet has to stay in whatever format supermetric exported it as. This becomes especially important when scheduling to automate this script.
 
-7. The script is becoming complex: Will take time (<30 secs for me, but depending on your computer might take longer). Please let it finish, your computer is running over 1000 processes to complete.
+7. ******OUTPUT ON GSHEET MIGHT HAVE LEADING APOSTROPHE IN DATA************
 
-8. Values are no longer automatically formatted due to constant changes. If you plan on doing calculations on the google sheets, you MUST change the number formatting of the cells. Exporting the dataframe to google sheets from python changes the data into string (text) so even if you see a number, gsheets will not recognize it as a number. Formatting the cell should be the last thing you do before the sheet is given to clients.
 
